@@ -1,0 +1,22 @@
+<ion-content padding>
+  <div class="container">
+    <div class="card card-container">
+      <img id="profile-img" class="profile-img-card" src="./assets/imgs/init.jpg" />
+      <p id="profile-name" class="profile-name-card"></p>
+      <form class="form-signin">
+        <span id="reauth-email" class="reauth-email"></span>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required [(ngModel)]="email" autofocus>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required [(ngModel)]="password">
+        <div id="remember" class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Recordar datos
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" (click)="login()">Sign in</button>
+      </form>
+      <a href="#" class="forgot-password">
+          ¿olvidó su contraseña?
+      </a>
+    </div>
+  </div>
+</ion-content>
