@@ -1,1 +1,19 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mycontent" side="right">
+    <ion-content padding>
+        <ion-list>
+            <ion-item>
+                <p style="font-size: 20px; text-align:center">Invitados</p>
+            </ion-item>
+            <ion-item>
+                <p style="font-size: 20px; text-align:center">Vehículos</p>
+            </ion-item>
+            <ion-item>
+                <p style="font-size: 20px; text-align:center">Reservas</p>
+            </ion-item>
+            <ion-item>
+                <p style="font-size: 20px; text-align:center">Turnos</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
